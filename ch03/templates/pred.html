@@ -1,0 +1,12 @@
+<html>
+   <head>
+    <title>MNIST Example</title>
+    <meta charset="utf-8">    
+   </head>
+   <body>
+      <div class="jumbotron">
+      <p>The Prediction is as follows : {{ predicted_class }}, {{ score }}%</p>
+      </div>
+	  <img src="{{ url_for('static', filename=img_src) }}">
+   </body>
+</html>
